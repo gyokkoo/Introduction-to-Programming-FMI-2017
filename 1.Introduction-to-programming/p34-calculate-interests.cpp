@@ -16,7 +16,7 @@
 *    1. Първоначалната сума, която вложителят внася в банката на депозитна сметка
 *    2. Годишна процентна лихва, по която се начислява доходът от вложената сума
 *    3. Броят години, за които е открит депозитът
-*    4. Броят периоди в годината, когато се извършва начисляване на лихв
+*    4. Броят периоди в годината, когато се извършва начисляване на лихвa
 */
 #include <iostream>
 #include <cmath>
@@ -50,7 +50,7 @@ int main()
 
     cout << "Enter deposit years: ";
     cin >> depositYears;
-    cout << "Enter interest frequency per year:";
+    cout << "Enter interest frequency per year: ";
     cin >> interestFreqency;
 
     cout << "Initial value = " << initialValue << endl;;
@@ -63,16 +63,14 @@ int main()
     cout << calculateDepositForYear(initialValue, interestRatePercent) << endl;
 
     cout << "Deposit for all years: ";
-    cout << calculateDepositAfterYears(initialValue, interestFreqency, depositYears) << endl;
-    // cout << initialValue * pow (1 + interestRatePercent / 100, depositYears) << endl;
+    cout << calculateDepositAfterYears(initialValue, interestRatePercent, depositYears) << endl;
 
     cout << "Deposit for all years, with frequency: ";
     cout << calculateDepositNTimesPerYear(
       initialValue,
-      interestFreqency,
+      interestRatePercent,
       depositYears,
       interestFreqency) << endl;
-    // cout << initialValue * pow (1 + interestRatePercent / (100 * interestFreqency), depositYears * interestFreqency) << endl;
 
     return 0;
 }

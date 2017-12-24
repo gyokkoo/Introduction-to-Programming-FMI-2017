@@ -22,4 +22,4 @@
   
   (https://en.wikipedia.org/wiki/Leap_year)
 
-[Слайдове](Nezhdetov/cpp-fmi/blob/master/1.Introduction-to-Programming-Practice/week-03/FMI_UP_3.pdf)
+[Слайдове](FMI_UP_3.pdf)

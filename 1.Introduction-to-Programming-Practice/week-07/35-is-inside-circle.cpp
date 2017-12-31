@@ -16,10 +16,9 @@
 *     2. дали точка (x, y) лежи във втората оцветената област от фигурата.
 *   https://prnt.sc/hecmxd
 */
+
 #include <iostream>
 #include <cmath>
-
-using namespace std;
 
 bool isInsideCircle(double x, double y, double xCenter, double yCenter, double radius)
 {
@@ -32,37 +31,27 @@ bool isInsideCircle(double x, double y, double xCenter, double yCenter, double r
 
 bool isInsideSmallerCircle(double x, double y)
 {
-    if (isInsideCircle(x, y, 0, 3, 1))
-    {
-        return true;
-    }
-
-    return false;
+    return isInsideCircle(x, y, 0, 3, 1);
 }
 
 bool isInsideBiggerCircle(double x, double y)
 {
-    if (isInsideCircle(x, y, 0, 0, 2))
-    {
-        return true;
-    }
-
-    return false;
+    return isInsideCircle(x, y, 0, 0, 2);
 }
 
 int main()
 {
     double x = 0, y = 0;
-    cout << "Enter X and Y for a point: ";
-    cin >> x >> y;
+    std::cout << "Enter X and Y for a point: ";
+    std::cin >> x >> y;
 
-    cout << "The point x= " << x << " y= " << y << endl;
-    cout << (isInsideSmallerCircle(x, y) ?
+    std::cout << "The point x = " << x << " y = " << y << "\n";
+    std::cout << (isInsideSmallerCircle(x, y) ?
         "Is inside smaller circle" :
-        "Is outside smaller circle") << endl;
-    cout << (isInsideBiggerCircle(x, y) ?
+        "Is outside smaller circle") << "\n";
+    std::cout << (isInsideBiggerCircle(x, y) ?
         "Is inside bigger circle" :
-        "Is outside bigger circle") << endl;
+        "Is outside bigger circle") << "\n";
 
     return 0;
 }

@@ -18,10 +18,12 @@
 *    3. Броят години, за които е открит депозитът
 *    4. Броят периоди в годината, когато се извършва начисляване на лихвa
 */
+
 #include <iostream>
 #include <cmath>
 
-using namespace std;
+using std::cout;
+using std::cin;
 
 double calculateDepositForYear (double m, double r)
 {
@@ -53,24 +55,24 @@ int main()
     cout << "Enter interest frequency per year: ";
     cin >> interestFreqency;
 
-    cout << "Initial value = " << initialValue << endl;;
-    cout << "Interest rate = " << interestRatePercent << "%" << endl;
-    cout << "Deposit years = " << depositYears << endl;
-    cout << "Interest frequency = " << interestFreqency << " times per year"<< endl;
+    cout << "Initial value = " << initialValue << "\n";
+    cout << "Interest rate = " << interestRatePercent << "%\n";
+    cout << "Deposit years = " << depositYears << "\n";
+    cout << "Interest frequency = " << interestFreqency << " times per year\n";
 
-    cout << "Output:" << endl;
-    cout << "Deposit for first year: ";
-    cout << calculateDepositForYear(initialValue, interestRatePercent) << endl;
+    cout << "Output:\n";
+    cout << "Deposit for first year: \n";
+    cout << calculateDepositForYear(initialValue, interestRatePercent) << "\n";
 
-    cout << "Deposit for all years: ";
-    cout << calculateDepositAfterYears(initialValue, interestRatePercent, depositYears) << endl;
+    cout << "Deposit for all years: \n";
+    cout << calculateDepositAfterYears(initialValue, interestRatePercent, depositYears) << "\n";
 
     cout << "Deposit for all years, with frequency: ";
     cout << calculateDepositNTimesPerYear(
       initialValue,
       interestRatePercent,
       depositYears,
-      interestFreqency) << endl;
+      interestFreqency) << "\n";
 
     return 0;
 }

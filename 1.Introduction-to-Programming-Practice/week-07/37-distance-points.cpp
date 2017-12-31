@@ -16,11 +16,10 @@
 *   да се напише програма, която чете координатите на n точки (n>1) от равнината,
 *   и извежда разстоянието между всеки две от тях.
 */
+
 #include <iostream>
 #include <cmath>
 #include <iomanip>
-
-using namespace std;
 
 const int MaxCount = 100;
 
@@ -40,12 +39,12 @@ int main()
     double x = 0, y = 0;
     int n;
 
-    cout << "Enter the count of the points: ";
-    cin >> n;
+    std::cout << "Enter the count of the points: ";
+    std::cin >> n;
 
     for (int i = 0; i < n; i++)
     {
-        cin >> x >> y;
+        std::cin >> x >> y;
         Xs[i] = x;
         Ys[i] = y;
     }
@@ -54,9 +53,9 @@ int main()
     {
         for (int j = i + 1; j < n; j++)
         {
-            cout << "Distance between {" << Xs[i] << " " << Ys[i]<< "} and {";
-            cout << Xs[j] << " " << Ys[j]<< "} is: ";
-            cout << getDistance(Xs[i], Ys[i], Xs[j], Ys[j]) << endl;;
+            std::cout << "Distance between {" << Xs[i] << " " << Ys[i]<< "} and {";
+            std::cout << Xs[j] << " " << Ys[j]<< "} is: ";
+            std::cout << getDistance(Xs[i], Ys[i], Xs[j], Ys[j]) << "\n";
         }
     }
 

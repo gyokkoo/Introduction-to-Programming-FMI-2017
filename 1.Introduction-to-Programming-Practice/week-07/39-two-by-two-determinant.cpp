@@ -7,7 +7,7 @@
 *
 * @author Gyokan Syuleymanov
 * @idnumber 62117
-* @task 40
+* @task 39
 * @compiler GCC
 *
 * Assignment:
@@ -15,9 +15,8 @@
 *  елементите на матрица от втори ред.
 *  Програмата да връща като резултат детерминантата на матрицата.
 */
-#include <iostream>
 
-using namespace std;
+#include <iostream>
 
 double getDeterminant(double a1, double a2, double b1, double b2)
 {
@@ -28,11 +27,11 @@ int main()
 {
     double a1 = 0, a2 = 0;
     double b1 = 0, b2 = 0;
-    cout << "Enter 2x2 matrix four elements):" << endl;
-    cin >> a1 >> a2 >> b1 >> b2;
+    std::cout << "Enter 2x2 matrix four elements):\n";
+    std::cin >> a1 >> a2 >> b1 >> b2;
 
-    cout << "The determinant of the matrix is:" << endl;
-    cout << getDeterminant(a1, a2, b1, b2) << endl;
+    std::cout << "The determinant of the matrix is:\n";
+    std::cout << getDeterminant(a1, a2, b1, b2) << "\n";
 
     return 0;
 }

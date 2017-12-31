@@ -15,9 +15,8 @@
 *   Като аргумент на функцията се предава номерът на числото, в редицата,
 *   а функцията връща като резултат самото число.
 */
-#include <iostream>
 
-using namespace std;
+#include <iostream>
 
 int getNthFibonacci(int n)
 {
@@ -46,9 +45,9 @@ int getNthFibonacci(int n)
 int main()
 {
     int n = 0;
-    cout << "Find n-th fibonacci, n = ";
-    cin >> n;
+    std::cout << "Find n-th fibonacci, n = ";
+    std::cin >> n;
 
-    cout << getNthFibonacci(n) << endl;
+    std::cout << getNthFibonacci(n) << "\n";
     return 0;
 }

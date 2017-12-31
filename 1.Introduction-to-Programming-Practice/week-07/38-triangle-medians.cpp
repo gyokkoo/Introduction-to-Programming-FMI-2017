@@ -7,7 +7,7 @@
 *
 * @author Gyokan Syuleymanov
 * @idnumber 62117
-* @task 39
+* @task 38
 * @compiler GCC
 *
 * Assignment:
@@ -17,10 +17,9 @@
 *   Периметъра на всички триъгълници с връх медицентър т.G
 *  http://prntscr.com/heves9
 */
+
 #include <iostream>
 #include <cmath>
-
-using namespace std;
 
 double getMedian(double a, double b, double c)
 {
@@ -32,10 +31,10 @@ void printMediansLength(double a, double b, double c)
     double firstMedian = getMedian(a, b, c);
     double secondMedian = getMedian(b, a, c);;
     double thirdMedian = getMedian(c, a, b);
-    cout << "--> The medians are: " << endl;
-    cout << "----> " << firstMedian << endl;
-    cout << "----> " << secondMedian << endl;
-    cout << "----> " << thirdMedian << endl;
+    std::cout << "--> The medians are: \n";
+    std::cout << "----> " << firstMedian << "\n";
+    std::cout << "----> " << secondMedian << "\n";
+    std::cout << "----> " << thirdMedian << "\n";
 }
 
 int main()
@@ -52,13 +51,13 @@ int main()
     double AMc = 0, GA = 0; //GMc = 0
 
 
-    cout << "Enter triangle sides:" << endl;
-    cin >> A >> B >> C;
+    std::cout << "Enter triangle sides:\n";
+    std::cin >> A >> B >> C;
 
     // triangle sides validity check
     if ((A + B < C) || (A + C < B) || (B + C < A))
     {
-        cout << "Invalid triangle sides!" << endl;
+        std::cout << "Invalid triangle sides!\n";
         return 0;
     }
 
@@ -66,37 +65,37 @@ int main()
     Mb = getMedian(B, A, C);
     Mc = getMedian(C, A, B);
 
-    cout << "The triangle {A Mb G}" << endl;
+    std::cout << "The triangle {A Mb G}\n";
     AMb = B / 2;
     AG = (2 * Ma) / 3;
     GMb = Mb / 3;
     printMediansLength(AMb, AG, GMb);
 
-    cout << "The triangle {G Mb C}" << endl;
+    std::cout << "The triangle {G Mb C}\n";
     CMb = B / 2;
     CG = (2 * Mc) / 3;
     GMb = Mb / 3;
     printMediansLength(CMb, CG, GMb);
 
-    cout << "The triangle {G Ma C}" << endl;
+    std::cout << "The triangle {G Ma C}\n";
     CMa = A / 2;
     GC = (2 * Mc) / 3;
     GMa = Ma / 3;
     printMediansLength(CMa, GC, GMa);
 
-    cout << "The triangle {G Ma B}" << endl;
+    std::cout << "The triangle {G Ma B}\n";
     BMa = A / 2;
     BG = (2 * Mb) / 3;
     GMa = Ma / 3;
     printMediansLength(BMa, BG, GMa);
 
-    cout << "The triangle {G Mc B}" << endl;
+    std::cout << "The triangle {G Mc B}\n";
     BMc = C / 2;
     GB = (2 * Mb) / 3;
     GMc = Mc / 3;
     printMediansLength(BMc, GB, GMc);
 
-    cout << "The triangle {G Mc A}" << endl;
+    std::cout << "The triangle {G Mc A}\n";
     AMc = C / 2;
     GA = (2 * Ma) / 3;
     GMc = Mc / 3;

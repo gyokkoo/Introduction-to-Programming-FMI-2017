@@ -21,9 +21,9 @@
 * 11 -> No
 * 1 -> Yes
 */
+
 #include <iostream>
 #include <cmath>
-using namespace std;
 
 // Recursive function that removes the first digit of number
 unsigned int removeFirstDigit(unsigned int n)
@@ -41,8 +41,8 @@ int main()
     int number = 0, squareNumber = 0;
     bool isAutomorphic = false;
 
-    cout << "Enter an integer number:" << endl;
-    cin >> number;
+    std::cout << "Enter an integer number:\n";
+    std::cin >> number;
     squareNumber = number * number;
 
     while (squareNumber > 0)
@@ -57,4 +57,5 @@ int main()
     }
 
     cout << (isAutomorphic ? "Yes" : "No") << endl;
+    return 0;
 }

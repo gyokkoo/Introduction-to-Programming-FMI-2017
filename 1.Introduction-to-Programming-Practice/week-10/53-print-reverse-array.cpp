@@ -16,23 +16,24 @@
 *   Пример: ACDFZ
 *   Изход: ZFDCA
 */
+
 #include <iostream>
 
-using namespace std;
+const int MAX_SIZE = 1024;
 
 int main()
 {
-    char arr[1000] = {};
+    char arr[MAX_SIZE];
     char currentSymbol = 0;
     int index = 0;
 
-    cout << "Enter an array of characters:" << endl;
-    cin >> currentSymbol;
+    std::cout << "Enter an array of characters:\n";
+    std::cin >> currentSymbol;
     while (currentSymbol != 'Z')
     {
         arr[index] = currentSymbol;
         index++;
-        cin >> currentSymbol;
+        std::cin >> currentSymbol;
     }
 
     arr[index] = 'Z';
@@ -40,7 +41,7 @@ int main()
 
     for (int i = index - 1; i >= 0; i--)
     {
-        cout << arr[i];
+        std::cout << arr[i];
     }
 
     return 0;

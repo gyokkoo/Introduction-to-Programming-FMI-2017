@@ -19,22 +19,23 @@
 * 121 -> Yes
 * 5 -> Yes
 */
+
 #include <iostream>
 #include <cmath>
 
-using namespace std;
+const int MAX_SIZE = 1024;
 
 int main()
 {
     long long number = 0;
-    int numArray[100], numberDigits = 0;
+    int numArray[MAX_SIZE], numberDigits = 0;
     bool isPalindrome = true;
 
-    cout << "Enter an integer number:" << endl;
-    cin >> number;
+    std::cout << "Enter an integer number:\n";
+    std::cin >> number;
     numberDigits = (int) log10 ((double) number) + 1;
 
-    cout << "Is " << number << " palindrome? -> ";
+    std::cout << "Is " << number << " palindrome? -> ";
 
     // Filling the array with digits of the number
     for (int i = 0; i < numberDigits; i++)
@@ -53,7 +54,7 @@ int main()
         }
     }
 
-    cout << (isPalindrome ? "Yes" : "No") << endl;
+    std::cout << (isPalindrome ? "Yes" : "No") << "\n";
 
     return 0;
 }

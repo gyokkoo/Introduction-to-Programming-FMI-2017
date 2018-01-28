@@ -39,7 +39,6 @@ int* mergeTwoArrays(int firstArr[], int secondArr[], int firstArrLength, int sec
                 j++;
             }
         }
-
         else if (firstArrTraversed)
         {
             result[index] = secondArr[j];

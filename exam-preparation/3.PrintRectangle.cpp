@@ -1,3 +1,17 @@
+/**
+*
+* Solution to exercises
+* Introduction to programming course
+* Faculty of Mathematics and Informatics of Sofia University
+* Winter semester 2017/2018
+*
+* @author Gyokan Syuleymanov
+* @idnumber 62117
+* @task 3
+* @compiler GCC
+*
+*/
+
 #include <iostream>
 
 using std::cout;

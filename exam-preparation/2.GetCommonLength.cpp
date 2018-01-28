@@ -71,7 +71,6 @@ int main()
     line firstLine =  { 1, 3, 1, 6 };
     line secondLine = { 1, 2, 1, 7 };
 
-
     std::cout << getCommonLength(firstLine, secondLine) << "\n" ;
 
     return 0;

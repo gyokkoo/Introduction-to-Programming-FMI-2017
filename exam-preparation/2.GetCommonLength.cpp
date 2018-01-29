@@ -16,33 +16,47 @@
 
 struct line
 {
-    double x1;
-    double y1;
-    double x2;
-    double y2;
+	double x1;
+	double y1;
+	double x2;
+	double y2;
 };
 
 bool isParallelToXaxis(line firstLine, line secondLine)
 {
-    if (firstLine.y1 == secondLine.y1 && firstLine.y2 && secondLine.y2)
-    {
-        return true;
-    }
-    return false;
+	if (firstLine.y1 == secondLine.y1 && firstLine.y2 && secondLine.y2)
+	{
+		return true;
+	}
+	return false;
 }
 
 bool isParallelToYaxis(line firstLine, line secondLine)
 {
-    if (firstLine.x1 == secondLine.x1 && firstLine.x2 && secondLine.x2)
-    {
-        return true;
-    }
-    return false;
+	if (firstLine.x1 == secondLine.x1 && firstLine.x2 && secondLine.x2)
+	{
+		return true;
+	}
+	return false;
 }
 
 
 double getCommonLength(line firstLine, line secondLine)
 {
+	if (firstLine.y1 > firstLine.y2)
+		std::swap(firstLine.y1, firstLine.y2);
+	if (firstLine.x1 > firstLine.x2)
+		std::swap(firstLine.x1, firstLine.x2);
+	if (secondLine.y1 > secondLine.y2)
+		std::swap(secondLine.y1, secondLine.y2);
+	if (secondLine.x1 > secondLine.x2)
+		std::swap(secondLine.x1, secondLine.x2);
+
+	if (firstLine.x1 > secondLine.x1)
+		std::swap(firstLine, secondLine);
+	if (firstLine.y1 > secondLine.y1)
+		std::swap(firstLine, secondLine);
+
 	if (isParallelToYaxis(firstLine, secondLine))
 	{
 		if (firstLine.y1 <= secondLine.y1 && secondLine.y2 <= firstLine.y2)
@@ -60,7 +74,7 @@ double getCommonLength(line firstLine, line secondLine)
 		}
 		if (secondLine.y2 >= firstLine.y1)
 		{
-			return secondLine.y2 >= firstLine.y1;
+			return secondLine.y2 - firstLine.y1;
 		}
 	}
 
@@ -91,15 +105,18 @@ double getCommonLength(line firstLine, line secondLine)
 
 int main()
 {
-    // Parallel to X axis
-    line firstLine =  { 1, 2, 6, 2 };
-    line secondLine = { 2, 2, 4, 2 };
+	// Parallel to X axis
+	// line firstLine =  { 1, 2, 6, 2 };
+	// line secondLine = { 2, 2, 4, 2 };
 
-    // Parallel to Y axis
-    // line firstLine =  { 1, 3, 1, 6 };
-    // line secondLine = { 1, 2, 1, 7 };
+	// Parallel to Y axis
+	// line firstLine =  { 1, 3, 1, 6 };
+	// line secondLine = { 1, 2, 1, 7 };
 
-    std::cout << getCommonLength(firstLine, secondLine) << "\n" ;
+	line firstLine = { 3, 6, 3, 2 };
+	line secondLine = { 3, 5, 3, 1 };
 
-    return 0;
+	std::cout << getCommonLength(firstLine, secondLine) << "\n";
+
+	return 0;
 }

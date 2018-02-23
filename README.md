@@ -31,8 +31,9 @@
 ## Coding Practice
 [All Exercises](https://github.com/Nezhdetov/cpp-fmi/tree/master/1.Introduction-to-Programming-Practice)
 
-> The course was held in 2017/2018 first semester in FMI Software Engineernig with lecturers Alexander Dimitrov and Mihail Konchev
+___
+The course was held in 2017/2018 first semester in FMI Software Engineernig with lecturers Alexander Dimitrov and Mihail Konchev
 
-If you have questions contact me on email:
+> If you have questions contact me on email:
 
-gyokan.nezhdetov@gmail.com
+> gyokan.nezhdetov@gmail.com

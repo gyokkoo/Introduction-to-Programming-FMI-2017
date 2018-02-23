@@ -1,5 +1,4 @@
 # Sofia University - Faculty of Mathematics and Informatics
----
 ## Lectures - Introduction to Programming
 
 [01.Introduction](https://github.com/Nezhdetov/cpp-fmi/blob/master/2.Introduction-to-Programming-Lectures/01.Introduction.pdf)
@@ -20,9 +19,9 @@
 
 [09.Functions](https://github.com/Nezhdetov/cpp-fmi/blob/master/2.Introduction-to-Programming-Lectures/09.Functions_adv.pdf)
 
-[10.10.StructDynamic](https://github.com/Nezhdetov/cpp-fmi/blob/master/2.Introduction-to-Programming-Lectures/10.StructDynamic.pdf)
+[10.StructDynamic](https://github.com/Nezhdetov/cpp-fmi/blob/master/2.Introduction-to-Programming-Lectures/10.StructDynamic.pdf)
 
-## Homeworks:
+## Homework
 * [First Homework](https://github.com/Nezhdetov/cpp-fmi/tree/master/up-homework-1)
 
 * [Second Homework](https://github.com/Nezhdetov/cpp-fmi/tree/master/up-homework-2)
@@ -31,3 +30,9 @@
 
 ## Coding Practice
 [All Exercises](https://github.com/Nezhdetov/cpp-fmi/tree/master/1.Introduction-to-Programming-Practice)
+
+> The course was held in 2017/2018 first semester in FMI Software Engineernig with lecturers Alexander Dimitrov and Mihail Konchev
+
+If you have questions contact me on email:
+
+gyokan.nezhdetov@gmail.com

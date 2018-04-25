@@ -1,4 +1,8 @@
 # Sofia University - Faculty of Mathematics and Informatics
+
+## OOP repository:
+[OOP-FMI](https://github.com/Nezhdetov/OOP-FMI-2018)
+
 ## Lectures - Introduction to Programming
 
 [01.Introduction](https://github.com/Nezhdetov/cpp-fmi/blob/master/2.Introduction-to-Programming-Lectures/01.Introduction.pdf)
@@ -37,3 +41,5 @@ The course was held in 2017/2018 first semester in FMI Software Engineernig with
 > If you have questions contact me on email:
 
 > gyokan.nezhdetov@gmail.com
+
+
